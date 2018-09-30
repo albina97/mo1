@@ -17,9 +17,9 @@ public class KaggleCSVWriterTwoWay {
         bw.write("\n");
     }
 
-    public void writeKaggleCSV(KaggleCSVReaderTwoWay.CSVInstanceTwoWay csvInstanceThreeWay) throws IOException {
+    public void writeKaggleCSV(KaggleCSVReaderTwoWay.CSVInstanceTwoWay csvInstanceTwoWay) throws IOException {
         try {
-            bw.write(String.valueOf(csvInstanceThreeWay.phraseID));
+            bw.write(String.valueOf(csvInstanceTwoWay.phraseID));
             bw.write(",");
             bw.write(String.valueOf(sentiment.ordinal()));
             bw.write("\n");
